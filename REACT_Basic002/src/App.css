@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* テーブル幅を固定 */
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  border: none; /* 横の線を削除 */
+  border-bottom: 1px solid black; /* 下の線のみ黒で表示 */
+  padding: 8px;
+}
+
+table th:first-child,
+table td:first-child {
+  width: 50px;
+  text-align: center;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+  width: auto; /* Details列を可変にする */
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+  min-width: 150px; /* Status列の最小幅を固定 */
+  width: 150px; /* 最大幅も固定 */
+  text-align: center;
+}
+
+table th:nth-child(4),
+table td:nth-child(4) {
+  min-width: 50px; /* Action列の最小幅を固定 */
+  width: 50px; /* 最大幅も固定 */
+  text-align: center;
+}
+
+table th[contenteditable],
+table td[contenteditable] {
+  border-bottom: 1px solid black; /* 下の線を維持 */
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+.status-summary {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.overall-status {
+  margin-bottom: 30px;
+}
+
+#add-card-button {
+  display: inline-block; /* ボタンのサイズをテキストに合わせる */
+  background-color: #4caf50; /* 緑色 */
+  color: white;
+  font-weight: bold;
+  font-size: 14px; /* テキストサイズ */
+  border-radius: 6px; /* 角丸 */
+  padding: 8px 16px; /* ボタンの内側余白を調整 */
+  border: none;
+  cursor: pointer;
+  text-align: center; /* テキストを中央揃え */
+  line-height: 1.5; /* 行の高さを調整 */
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* パディングを含めたサイズ調整 */
+}
+
+#add-card-button:hover {
+  background-color: #45a049; /* ホバー時の背景色 */
+}
+
+#add-card-button:focus {
+  outline: 2px solid #45a049; /* フォーカス時のアウトライン */
+}

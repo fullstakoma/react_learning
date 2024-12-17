@@ -1,0 +1,18 @@
+header {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: space-between; /* 左端と右端に要素を配置 */
+  align-items: center; /* 垂直方向の中央揃え */
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.title {
+  flex: 1; /* タイトルが中央に来るように */
+  text-align: center; /* テキスト中央揃え */
+  margin: 0;
+}
+
+.language-select {
+  margin-right: 10px; /* 右端に余白を追加 */
+  background-color: gray;
+}

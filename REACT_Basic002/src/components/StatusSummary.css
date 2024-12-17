@@ -1,0 +1,29 @@
+/* テーブル中央配置と固定幅 */
+.status-summary,
+.card-status-summary {
+  margin: 0 auto; /* ページ中央 */
+  text-align: center;
+}
+
+.status-summary table,
+.card-status-summary table {
+  margin: 0 auto; /* テーブル中央配置 */
+  border-collapse: collapse; /* セルの枠線を結合 */
+  table-layout: fixed; /* セル幅固定 */
+  width: auto; /* テーブル幅 */
+}
+
+.status-summary th,
+.status-summary td,
+.card-status-summary th,
+.card-status-summary td {
+  width: 150px !important; /* セル幅を150pxに強制固定 */
+  max-width: 150px; /* 最大幅も150px */
+  min-width: 150px; /* 最小幅も150px */
+  text-align: center; /* テキスト中央揃え */
+  padding: 8px; /* セル内の余白 */
+  border: 1px solid #ddd; /* 枠線を追加 */
+  white-space: nowrap; /* テキスト折り返し禁止 */
+  overflow: hidden; /* はみ出したテキストを隠す */
+  box-sizing: border-box; /* paddingを含めたサイズ調整 */
+}
